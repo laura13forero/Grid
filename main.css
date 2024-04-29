@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  width: 100%;
+  background-color: cadetblue;
+  height: 280px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: 60px;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.div2 {
+  display: grid;
+  place-items: center;
+}
+
+.foto {
+  height: 70%;
+}
+
+.logo {
+  margin-top: 210px;
+}
+
+
+body {
+  background-color: burlywood;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+.quien-soy-experiencia,
+.formacion-proyectos {
+  margin: 10% 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: 60px;
+}
+
+.quien-soy,
+.experiencia,
+.formacion,
+.proyectos,
+.reconocimiento {
+  background-color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+
+.servicios-proyectos,
+.hablamos {
+  background-color: cadetblue;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.muestras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 28px;
+  padding: 10px;
+}
+
+.muestra {
+  background-color: white;
+  padding: 20px;
+}
+
+.contacto-y-redes {
+  background-color: bisque;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
+  gap: 28px;
+  padding: 10px 580px;
+  margin-bottom: 60px;
+}
+
+.footer div {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer div:hover {
+  background-color: lightgreen;
+}
+
+.footer div h1 {
+  font-size: 16px;
+}
+
+@media(max-width:970px) {
+
+  nav {
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
+      gap: 10px;
+      margin-top: -60px;
+  }
+
+  .foto{
+      width: 80%;
+  }
+
+  .logo{
+      width: 70%;
+      margin-top: 230px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .quien-soy-experiencia, .formacion-proyectos {
+      margin-top: 80px;
+  }
+
+  .footer {
+      padding: 4px;
+  }
+}
